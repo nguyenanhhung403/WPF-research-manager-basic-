@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="ResearchProjectManagerment_SE180159.Views.ResearchProjectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ResearchProjectManagerment_SE180159.Views"
+        mc:Ignorable="d"
+        Title="Research Project Management - Spring 2025"
+        Height="500" Width="800"
+        FontFamily="Tahoma" FontSize="13"
+        Background="#FFF5F5DC"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header with user info -->
+        <TextBlock Grid.Row="0" 
+                   x:Name="txtUserInfo" 
+                   FontSize="12" 
+                   Foreground="#FF6B705C" 
+                   Margin="10" 
+                   HorizontalAlignment="Right"/>
+
+        <!-- Search Panel -->
+        <Grid Grid.Row="1" Margin="10,5,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Search:" FontFamily="Arial" FontSize="12" Foreground="#FF6B705C" VerticalAlignment="Center"/>
+            <TextBox Grid.Column="1" x:Name="txtSearch" Height="14" Background="#FFFFF8EB" Margin="5,0"/>
+            <Button Grid.Column="2" x:Name="btnSearch" Content="Search" Padding="5" Background="#FFB38B82" Foreground="White" Click="btnSearch_Click"/>
+        </Grid>
+
+        <!-- Main Content - Project List using simplified DataGrid -->
+        <DataGrid Grid.Row="2" 
+                  x:Name="dgProjects" 
+                  Margin="10,0" 
+                  Background="#FFFFF8EB"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  AlternatingRowBackground="#FFF0F0F0"
+                  GridLinesVisibility="All"
+                  RowHeaderWidth="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ProjectId}" Width="50"/>
+                <DataGridTextColumn Header="Project Title" Binding="{Binding ProjectTitle}" Width="*"/>
+                <DataGridTextColumn Header="Field" Binding="{Binding ResearchField}" Width="100"/>
+                <DataGridTextColumn Header="Lead" Binding="{Binding LeadResearcher.FullName}" Width="100"/>
+                <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate, StringFormat={}{0:dd/MM/yyyy}}" Width="90"/>
+                <DataGridTextColumn Header="End Date" Binding="{Binding EndDate, StringFormat={}{0:dd/MM/yyyy}}" Width="90"/>
+                <DataGridTextColumn Header="Budget" Binding="{Binding Budget, StringFormat=N2}" Width="80"/>
+            </DataGrid.Columns>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#FFB38B82"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Padding" Value="5"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+
+        <!-- Action Buttons -->
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+            <Button x:Name="btnAdd" Content="Add New" Padding="5" Background="#FFB38B82" Foreground="White" Margin="5,0" Width="80" Click="btnAdd_Click"/>
+            <Button x:Name="btnEdit" Content="Edit" Padding="5" Background="#FFB38B82" Foreground="White" Margin="5,0" Width="80" Click="btnEdit_Click"/>
+            <Button x:Name="btnDelete" Content="Delete" Padding="5" Background="#FFB38B82" Foreground="White" Margin="5,0" Width="80" Click="btnDelete_Click"/>
+        </StackPanel>
+    </Grid>
+</Window> 

@@ -1,0 +1,15 @@
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\bin\Debug\net8.0\BLL.deps.json
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\bin\Debug\net8.0\BLL.dll
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\bin\Debug\net8.0\BLL.pdb
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\bin\Debug\net8.0\DAL.dll
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\bin\Debug\net8.0\DAL.pdb
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\BLL.csproj.AssemblyReference.cache
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\BLL.dll
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\refint\BLL.dll
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\BLL.pdb
+C:\Users\nguye\Downloads\PE_PRN212_SP25_234599_NguyenAnhHung\BLL\obj\Debug\net8.0\ref\BLL.dll

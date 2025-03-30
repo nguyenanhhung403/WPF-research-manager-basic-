@@ -1,0 +1,8 @@
+﻿<Application x:Class="ResearchProjectManagerment_SE180159.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ResearchProjectManagerment_SE180159">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
